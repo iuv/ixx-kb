@@ -1,0 +1,17 @@
+
+if SHIELD_IXX_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "ixx-kb"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_IXX_LEFT || SHIELD_IXX_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
