@@ -8,8 +8,7 @@
         cxm: cxm {
             compatible = "zmk,behavior-macro";
             label = "CXM";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp H &kp U &kp X &kp I &kp A &kp N &kp M &kp I &kp N &kp G>;
+            #binding-cells = <0>;            bindings = <&kp C &kp H &kp U &kp X &kp I &kp A &kp N &kp M &kp I &kp N &kp G>;
             wait-ms = <1>;
             tap-ms = <1>;
         };
