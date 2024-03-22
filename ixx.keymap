@@ -4,34 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    macros {
-        cxm: cxm {
-            compatible = "zmk,behavior-macro";
-            label = "CXM";
-            #binding-cells = <0>;            bindings = <&kp C &kp H &kp U &kp X &kp I &kp A &kp N &kp M &kp I &kp N &kp G>;
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        xxpass: xxpass {
-            compatible = "zmk,behavior-macro";
-            label = "XXPASS";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N3 &kp N1 &kp N4 &kp N5 &kp N2 &kp N0>;
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        xxfufe: xxfufe {
-            compatible = "zmk,behavior-macro";
-            label = "XXFUFE";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp U &kp F &kp E &kp P &kp N &kp D &kp C>;
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-    };
-
     behaviors {
         q_tab: q_tab {
             compatible = "zmk,behavior-mod-morph";
@@ -69,7 +41,7 @@
             bindings = <
   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0
   &none         &none         &none         &none          &none           &kp C_VOL_DN  &kp C_VOL_UP  &kp DOUBLE_QUOTES  &kp SQT       &kp COLON
-  &kp TILDE     &xxpass       &cxm          &kp LC(LG(F))  &none           &xxfufe       &out OUT_TOG  &trans             &kp DOT       &kp QUESTION
+  &kp TILDE     &none         &none         &kp LC(LG(F))  &none           &none         &out OUT_TOG  &trans             &kp DOT       &kp QUESTION
   &trans        &trans        &trans        &trans         &trans          &trans        &trans        &trans             &trans        &trans
             >;
         };
